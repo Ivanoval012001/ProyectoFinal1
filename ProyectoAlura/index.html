@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de encriptado</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <!-- Texto de solicitud -->
+    <textarea name="ingreso_texto" id="ingreso_texto" class="texto_solicitado" placeholder="Ingresa el texto aquí"></textarea>
+
+    <!-- División de pantalla -->
+    <div class="Divion_pantalla">
+        <img class="presentacion_imagen" src="./Alura Challenge - Desafío 1 - Lógica/Logo.png" alt="Logo de Alura">
+    </div>
+
+    <!-- Mensajes volátiles -->
+    <div class="espacio-vacio">
+        <div class="mensajes_volatiles">
+            <p class="letrero_error" id="error" hidden>El texto ingresado tiene acentos por favor intenta de nuevo sin acentos</p>
+            <button class="copiar_button" id="Copiar" hidden>Copiar</button>
+            <div class="texto_resultado" id="rectangulo_textos">
+                <img class="muñeco_rectangulo" src="./Alura Challenge - Desafío 1 - Lógica/Muñeco.png" alt="Muñeco ilustrativo" id="muneco">
+                <section class="resultado_acople" id="sinTextos">
+                    <p class="ningun_mensaje">Ningún mensaje fue encontrado</p>
+                    <p class="ingresa_mensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- Advertencia y botones de encriptado -->
+    <div class="textoAcentosNo">
+        <img src="./Alura Challenge - Desafío 1 - Lógica/bi_exclamation-circle-fill-1.png" alt="Símbolo de advertencia" class="simboloAdvertencia">
+        <p class="advertencia">Solo letras sin acentos</p>
+    </div>
+    <div class="botones-cripto">
+        <button class="boton-encripto" onclick="encriptar_funcion()">Encriptar</button>
+        <button class="boton-desencripto" onclick="desencriptar_funcion()">Desencriptar</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Pie de página -->
+    <footer class="footer"></footer>
+    <div class="espacio-inferior"></div>
+</body>
+</html>

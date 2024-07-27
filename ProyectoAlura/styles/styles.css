@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+    --color-primario: #F3F5FC;
+    --color-secundario: #0A3871;
+    --color-terciario: #FFFFFF;
+    --fuente-inter: "Inter", sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.textoAcentosNo{
+    position: absolute;
+    top: 42rem;
+    height: auto;
+    width: 100%;
+}
+
+.advertencia{
+    font-family: var(--fuente-inter);
+    font-size: 1rem;
+    color: #495057;
+    position: absolute;
+    left: 5.5rem;
+}
+
+.simboloAdvertencia{
+    position: absolute;
+    left: 4rem;
+}
+
+.footer{
+    top: 90%;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    height: 100%;
+    padding-bottom: 2rem;
+}
+
+.presentacion_imagen {
+    position: absolute;
+    width: 7.5rem;
+    height: 3rem;
+    top: 2.5rem;
+    left: 2.5rem;
+}
+
+.mensajes_volatiles {
+    flex-wrap: wrap;
+    position:relative;
+    background-color: var(--color-terciario);
+    width: 30%;
+    height: 100%;
+    max-height: 35rem;
+    border-radius: 2rem;
+    bottom: 2rem;
+    top: 3rem;
+    left: 67%;
+    min-height: 45rem;
+    box-shadow: 0.313rem 0.625rem 1.25rem #1717172a;
+    line-height: 200%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.texto_solicitado {
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    font-family: var(--fuente-inter);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    left: 13%;
+    top: 9%;
+    padding: 1rem;
+    text-align: start;
+    color: var(--color-secundario);
+    outline: none;
+    border: 12px;
+    background-color: var(--color-primario);
+    resize: vertical;
+}
+
+.texto_solicitado:focus {
+    outline: none;
+    border: 12px;
+    background-color: var(--color-primario);
+}
+
+.formato_resultado {
+    width: 85%;
+    font-family: var(--fuente-inter);
+    font-size: 30px;
+}
+
+.boton-encripto, .boton-desencripto {
+    width: 28%;
+    height: 8%;
+    position: absolute;
+    top: 86%;
+    padding: 1.0rem;
+    font-family: var(--fuente-inter);
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.boton-encripto {
+    left: 4%;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+.boton-encripto:hover {
+    background-color: #9cc3f0;
+    color: var(--color-terciario);
+}
+
+.boton-desencripto {
+    left: 34%;
+    background-color: #D8DFE8;
+    color: var(--color-secundario);
+}
+
+.boton-desencripto:hover {
+    background-color: #9cc3f0;
+    color: var(--color-terciario);
+}
+
+.muñeco_rectangulo {
+    position: absolute;
+    width: 70%;
+    top: 25%;
+    left: 15%;
+}
+
+.ningun_mensaje, .ingresa_mensaje, .letrero_error {
+    font-family: var(--fuente-inter);
+    text-align: center;
+    position: absolute;
+    width: 95%;
+}
+
+.ningun_mensaje {
+    color: #343A40;
+    font-weight: 700;
+    font-size: 24px;
+    top: 65%;
+}
+
+.ingresa_mensaje {
+    color: #495057;
+    font-weight: 400;
+    font-size: 16px;
+    top: 75%;
+}
+
+.letrero_error {
+    background-color: #0A3871;
+    height: auto;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    color: #8dafdb;
+    font-weight: 400;
+    font-size: 30px;
+    top: 50%;
+}
+
+.texto_resultado {
+    font-family: var(--fuente-inter);
+    word-wrap: break-word;
+    gap: 15%;
+    font-size: 23px;
+    width: 95%;
+    padding: 10px;
+    height: 45rem;
+    border-bottom:30rem;
+    display: block;
+    overflow: auto;
+}
+
+.copiar_button {
+    width: 50%;
+    height: 8%;
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    padding: 1rem;
+    font-family: var(--fuente-inter);
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #0A3871;
+    border-radius: 30px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    .textoAcentosNo {
+        top: 34.4rem;
+    }
+
+    .espacio-vacio {
+        margin: 2rem;
+    }
+
+    .espacio-inferior {
+        height: 2rem;
+        width: 100%;
+    }
+
+    .texto_solicitado {
+        left: 10%;
+        top: 16%;
+        width: 80%;
+        height: 26rem;
+        font-size: 20px;
+        padding: 0;
+        line-height: 150%;
+    }
+
+    .letrero_error {
+        padding: 3rem;
+        top: 2rem;
+        height: auto;
+    }
+
+    .texto_resultado {
+        display: inline;
+    }
+
+    .muñeco_rectangulo {
+        display: none;
+    }
+
+    .presentacion_imagen {
+        top: 4.589rem;
+        left: 0;
+    }
+
+    .mensajes_volatiles {
+        width: 90%;
+        height: auto;
+        min-height: 8rem;
+        max-height: 50rem;
+        top: 41rem;
+        left: 5%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .ningun_mensaje {
+        top: 25%;
+        padding: 1px;
+    }
+
+    .ingresa_mensaje {
+        top: 50%;
+        height: 24px;
+    }
+
+    .boton-encripto {
+        top: 70%;
+        left: 6%;
+        width: 40%;
+        height: 8%;
+    }
+
+    .boton-desencripto {
+        top: 70%;
+        left: 55%;
+        width: 40%;
+        height: 8;
+    }
+}
